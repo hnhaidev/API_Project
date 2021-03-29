@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YT Style</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="src/style.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	
+	<header>
+		<div class="container">
+			<div class="logo">
+				<a href=""><span class="ytColor">YT</span> Style</a>
+			</div>
+			<div class="player-video">
+				<div class="player">
+					<div class="loopVideo"><i class="fas fa-sync"></i></div>
+					<div class="pauseVideo"><i class="far fa-pause-circle"></i></div>
+					<div class="playStop"><i class="far fa-play-circle"></i></div>
+					<div class="nextMusic"><i class="fas fa-step-forward"></i></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section>
+		<div class="container">
+			<div class="content-left">
+				<div class="form-search">
+					<input type="text" name="keyword" id="keyword" placeholder="Search" autocomplete="off" autofocus>
+					<button class="btn-search"><i class="fas fa-search"></i></button>
+				</div>
+				<div class="trending-video">
+					<button class="btn-trending">Trending</button>
+					<div class="dropdown">
+						<div class="dropdown-select">
+							<span class="select">Việt Nam</span>
+							<i class="fas fa-caret-down"></i>
+						</div>
+						<div class="dropdown-list">
+							<option class="regionCode" value="VN">Việt Nam</option>
+							<option class="regionCode" value="US">Hoa Kỳ</option>
+							<option class="regionCode" value="GB">Anh</option>
+						</div>
+					</div>
+				</div>
+				<div id="result-search"></div>
+			</div>
+   
+			<div class="content-right">
+				<div id="video"></div>
+				<p id="title-queue"></p>
+				<div id="queue-play"></div>
+			</div>
+   
+			<div class="clear-fix"></div>
+			<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+		</div>
+	</section>
+
+	<div class="content-area">
+		<h2><span class="ytColor">YT</span> Style: <span class="animate-content"></span></h2>
+	</div>
+	
+
+	<div class="loader-wrapper">
+		<span class="loader"><span class="loader-inner"></span></span>
+	</div>
+
+	<!-- script -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"></script>
+	<script src="src/main.js"></script>
+	<script src="https://apis.google.com/js/client.js?onload=init"></script>
+	<script src="http://www.youtube.com/player_api"></script>
+	
+	<script>
+	</script>
+</body>
+</html>
